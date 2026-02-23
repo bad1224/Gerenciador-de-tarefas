@@ -1,21 +1,13 @@
 ## Gerenciador-de-tarefas
 Projeto do módulo de JavaScript (Escola DNC) - Gerenciador de Tarefas
+
+
 ## ❎ Gerenciador de Tarefas - Projeto DNC
 
+Sheet Monkey - https://dashboard.sheetmonkey.io/edit/5LucWFff2BhkVfrbxHPgox
+netlify - thunderous-babka-3dfff7.netlify.app
+
 ## Este é o projeto de desenvolvimento do módulo Javascript do curso de Tecnologia da Escola DNC.
-
-## 📂 Estrutura do Projeto
-/
-
-├── index.html          # Página Inicial (Home)
-├── folha2.html         # Painel do Board (Gerenciador)
-├── css/
-│   └── style2.css      # Estilização e Cores
-├── js/
-│   └── script2.js      # Lógica e integração Sheet Monkey
-└── README.md           # Documentação do Projeto
-
-
 
 ## 🚀 Tecnologias Utilizadas
 * HTML5 / CSS3
