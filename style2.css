@@ -1,0 +1,167 @@
+body {
+  /* 1. MUDANÇA DE COR AQUI (Escolhi um Azul Executivo, mude se desejar) */
+  background-color: #EEEEEE; 
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px; /* Garante que o board não cole no topo no celular */
+}
+
+.container {
+    margin: 20px auto;   /* Centraliza e dá um espaço no topo */
+    width: 95%;          /* ELE VAI PREENCHER 95% DA TELA DISPONÍVEL */
+    max-width: 900px;    /* No computador, ele pode abrir mais (mudei de 600 para 900) */
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* Garante que o preenchimento não empurre as bordas */
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #2D70FD;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex !important;
+  align-items: flex-end !important;
+  gap: 10px !important;
+  margin-bottom: 20px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%; /* Faz o input ocupar o campo todo */
+  box-sizing: border-box;
+}
+
+.add-btn {
+  width: 45px;
+  height: 40px;
+  background: #2D70FD;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  flex-shrink: 0 !important;
+}
+.add-btn:hover { background: #1b5cd9; }
+
+/* TAREFAS */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+.task.completed span { text-decoration: line-through; color: #888; }
+
+.tag {
+  background: #e0e7ff;
+  color: #2D70FD;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.concluir-btn {
+  background: #2D70FD;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.corrigir-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* STATUS E BOTÕES FINAIS */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clear-btn, .back-btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.clear-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+}
+
+.back-btn {
+  background: transparent;
+  color: #2D70FD;
+  border: 2px solid #2D70FD;
+}
+
+/* --- ADAPTAÇÃO PARA CELULAR (RESPONSIVIDADE) --- */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .task {
+    flex-direction: column; /* Empilha texto e botões no celular */
+    align-items: flex-start;
+  }
+  
+  .btn-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

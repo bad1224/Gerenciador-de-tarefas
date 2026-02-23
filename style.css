@@ -1,0 +1,75 @@
+.body-index {
+    background-color: #F2F2F2;
+    font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Copiando a lógica do seu código: padding lateral flexível */
+    padding: 20px 5%; 
+    position: relative;
+    overflow-x: hidden;
+}
+
+.title-main {
+    /* Em vez de 652px fixos, usamos largura máxima */
+    width: 100%;
+    max-width: 700px; 
+    font-size: clamp(48px, 10vw, 80px); /* Diminui sozinho no celular */
+    font-weight: 700;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.btn-entrar {
+    width: 100%;
+    max-width: 298px;
+    height: 35px;
+    border: 3px solid #000;
+    border-radius: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #000000;     /* O fundo fica preto */
+    color: #FFFFFF;                /* O texto fica branco */
+}
+
+.footer-index {
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+}
+
+/* A ADAPTAÇÃO IGUAL AO THE DEV NEWS */
+@media (max-width: 768px) {
+    .body-index {
+        align-items: center; /* Centraliza tudo no celular */
+        text-align: center;
+        padding-left: 5%; 
+    }
+    .footer-index {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 40px;
+    }
+}
+
+/* Se não existir, cole isso aqui no final do arquivo */
+.logo-dnc { 
+    width: 150px; /* Altere esse número para o tamanho que você desejar */
+}
+
+.btn-entrar {
+    margin-top: -10px; /* Esse valor negativo faz o botão "pular" para cima */
+}
