@@ -8,6 +8,11 @@ Sheet Monkey - https://dashboard.sheetmonkey.io/edit/5LucWFff2BhkVfrbxHPgox
 
 netlify - https://thunderous-babka-3dfff7.netlify.app/
 
+### 📂 Estrutura
+- `index.html` (Home)
+- `css/` (Estilos)
+- `js/` (Lógica e API)
+
 ## 🚀 Tecnologias Utilizadas
 * HTML5 / CSS3
 * JavaScript (Manipulação de DOM)
