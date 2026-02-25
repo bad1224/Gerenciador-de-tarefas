@@ -12,14 +12,11 @@ async function addTask() {
         return;
     }
 
-    // 1. Renderiza na tela imediatamente com os botões
     renderizarNaTela(name, tag);
 
-    // 2. Limpa os campos (Placeholder volta a aparecer)
     nameInput.value = '';
     tagInput.value = '';
 
-    // 3. Envia para a planilha
     try {
         await fetch(apiURL, {
             method: 'POST',
@@ -78,4 +75,5 @@ function clearTasks() {
         completedTasks = 0;
         document.getElementById('doneCount').innerText = '0';
     }
+
 }
