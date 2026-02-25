@@ -1,12 +1,11 @@
 let doneCount = 0; 
 const SHEET_MONKEY_URL = 'https://api.sheetmonkey.io/form/5LucWFff2BhkVfrbxHPgox';
 
-// Função de envio simplificada: Tarefa, Etiqueta, Status e Horário
 async function enviarConclusao(tarefa, etiqueta) {
     const formData = new FormData();
     formData.append("Tarefa", tarefa);
     formData.append("Etiqueta", etiqueta);
-    formData.append("Status", "Concluída"); // Status fixo como concluída
+    formData.append("Status", "Concluída");
     formData.append("Data / Horário", new Date().toLocaleString('pt-BR'));
 
     try {
@@ -25,8 +24,6 @@ function addTask() {
   const name = document.getElementById("taskName").value.trim();
   const tag = document.getElementById("taskTag").value.trim();
   if (!name) return;
-
-  // AQUI NÃO ENVIA NADA PARA A PLANILHA AINDA (SÓ NA TELA)
 
   const taskList = document.getElementById("taskList");
   const taskDiv = document.createElement("div");
@@ -50,14 +47,13 @@ function addTask() {
     taskDiv.classList.add("completed");
     concluirBtn.remove();
     
-    // Remove o botão corrigir ao concluir
-    const corr = taskDiv.querySelector(".corrigir-btn");
+   const corr = taskDiv.querySelector(".corrigir-btn");
     if(corr) corr.remove();
     
     doneCount++; 
     document.getElementById("doneCount").textContent = doneCount;
 
-    // AGORA SIM: ENVIA TUDO PARA A PLANILHA EM UMA LINHA SÓ
+   
     enviarConclusao(name, tag);
   };
 
@@ -95,4 +91,5 @@ function clearTasks() {
   doneCount = 0; 
   document.getElementById("doneCount").textContent = doneCount;
 }
+
 
