@@ -4,7 +4,7 @@ Projeto do módulo de JavaScript (Escola DNC) - Gerenciador de Tarefas
 
 ## ❎ Gerenciador de Tarefas - Projeto DNC
 
-Sheet Monkey - https://dashboard.sheetmonkey.io/edit/5LucWFff2BhkVfrbxHPgox
+Sheet Monkey - https://projeto-gerenciador-tarefas.netlify.app/
 
 netlify - https://thunderous-babka-3dfff7.netlify.app/
 
