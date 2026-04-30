@@ -6,7 +6,7 @@ Projeto do módulo de JavaScript (Escola DNC) - Gerenciador de Tarefas
 
 Sheet Monkey - https://projeto-gerenciador-tarefas.netlify.app/
 
-netlify - https://thunderous-babka-3dfff7.netlify.app/
+netlify - https://projeto-gerenciador-tarefas.netlify.app/
 
 ### 📂 Estrutura
 - `index.html` (Home)
